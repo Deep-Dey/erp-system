@@ -38,7 +38,7 @@ if (!isset($_SESSION['id'])) {
         <form action="challan.php" method="post">
             <h2 class="text-center">Invoice</h2>
             <div class="form-group">
-                <input type="text" class="form-control" name="candidate" value="<?php echo "$candidateMail" ?>" required>
+                <input type="text" class="form-control" name="candidate" value="<?php echo "$candidateMail" ?>" required disabled>
             </div>
             <div class="form-group">
                 <label for="enrollment">Select Enrollment</label>
@@ -58,6 +58,7 @@ if (!isset($_SESSION['id'])) {
                 <input type="number" class="form-control" name="amount" placeholder="Enter Amount" required>
             </div>
             <div class="form-group">
+                <label for="date">Enter a Date</label>
                 <input class="form-control" type="date" id="date" name="date" required="required">
             </div>
             <div class="form-group">
